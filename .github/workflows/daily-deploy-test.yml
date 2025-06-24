@@ -1,0 +1,14 @@
+name: Daily Deploy Test
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [daily-deploy-test]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Test Suite
+        run: echo "running test suite"
