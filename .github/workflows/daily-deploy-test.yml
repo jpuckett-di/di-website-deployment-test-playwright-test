@@ -2,8 +2,6 @@ name: Daily Deploy Test
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [daily-deploy-test]
 
 jobs:
   deployment:
